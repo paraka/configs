@@ -9,5 +9,5 @@
 
 = Install =
 * Copy vimrc file in your $HOME/.vimrc
-* Copy plugins directory inside a $HOME/.vim directory
+* Copy plugin directory inside a $HOME/.vim directory
 
