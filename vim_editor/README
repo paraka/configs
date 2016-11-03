@@ -1,0 +1,13 @@
+= Features =
+* Generate ctags with F3.
+* Add relative numbers in lines with cursor. Change behaviour with F5 key.
+* Show netrw menu with Ctr + E. IT is nicely configured to open files in vertical split among others.
+* Change between cpp implementation and header files with F4.
+* Compile with make using F7.
+* Go to definition variable with F12 (use ctags).
+* Set kernel coding style stuff when file or dir matches with prefixes "/usr/src" "linux" or "task".
+
+= Install =
+* Copy vimrc file in your $HOME/.vimrc
+* Copy plugins directory inside a $HOME/.vim directory
+
