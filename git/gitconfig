@@ -1,0 +1,32 @@
+[user]
+	name = Sergio Paracuellos
+	email = sergio.paracuellos@gmail.com
+[color]
+	ui = auto
+[format]
+    signoff = true
+[sendemail]
+    from = Sergio Paracuellos <sergio.paracuellos@gmail.com>
+    smtpuser = sergio.paracuellos@gmail.com
+    smtpserver = smtp.gmail.com
+    smtpencryption = tls
+    smtppass = **********
+    smtpserverport = 587
+	suppresscc = self
+[pull]
+	rebase = true
+[rerere]
+	enabled = 1
+[diff]
+	renames = copies
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[merge]
+	stat = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
