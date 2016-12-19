@@ -87,3 +87,6 @@ set autochdir
 
 " load settings for linux kernel style when match the following prefixes
 let g:linuxsty_patterns = [ "/usr/src/", "/linux", "task" ]
+
+" Python configuration
+au FileType python setl tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
