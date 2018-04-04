@@ -90,3 +90,6 @@ let g:linuxsty_patterns = [ "/usr/src/", "/linux", "task" ]
 
 " Python configuration
 au FileType python setl tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
+
+" Makefiles
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
