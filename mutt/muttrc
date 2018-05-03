@@ -16,3 +16,10 @@ bind index G imap-fetch-mail
 set editor = "vim"
 set charset = "utf-8"
 set record = ''
+
+# gmail address contacts with goobook
+# install goobook with apt and run
+# 'goobook authenticate'
+set query_command="goobook query %s"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
