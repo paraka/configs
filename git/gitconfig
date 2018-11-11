@@ -30,3 +30,11 @@
 	br = branch
 	ci = commit
 	st = status
+    ; Handle trailers general aliases
+    trailer-add = "!f(){ GIT_EDITOR=\"git interpret-trailers --in-place --trailer='$1: $2'\" git commit --amend; }; f"
+    trailer-add-me = "!f() { git trailer-add \"$1\" \"$(git config user.name) <$(git config user.email)>\"; }; f"
+    ; Specific aliases to handle trailers
+    reviewed-by-me = "!git trailer-add-me Reviewed-by"
+    acked-by-me = "!git trailer-add-me Acked-by"
+    tested-by-me = "!git trailer-add-me Tested-by"
+    reported-by = "!git trailer-add Reported-by"
