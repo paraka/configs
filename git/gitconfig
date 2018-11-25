@@ -1,8 +1,9 @@
 [user]
-	name = Sergio Paracuellos
-	email = sergio.paracuellos@gmail.com
+    name = Sergio Paracuellos
+    email = sergio.paracuellos@gmail.com
+    signingkey = 6BA2AE63CCD5DBD0
 [color]
-	ui = auto
+    ui = auto
 [format]
     signoff = true
 [sendemail]
@@ -12,24 +13,24 @@
     smtpencryption = tls
     smtppass = **********
     smtpserverport = 587
-	suppresscc = self
+    suppresscc = self
 [pull]
-	rebase = true
+    rebase = true
 [rerere]
-	enabled = 1
+    enabled = 1
 [diff]
 	renames = copies
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
 [push]
-	default = tracking
+    default = tracking
 [merge]
-	stat = true
+    stat = true
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
     ; Handle trailers general aliases
     trailer-add = "!f(){ GIT_EDITOR=\"git interpret-trailers --in-place --trailer='$1: $2'\" git commit --amend; }; f"
     trailer-add-me = "!f() { git trailer-add \"$1\" \"$(git config user.name) <$(git config user.email)>\"; }; f"
@@ -38,3 +39,5 @@
     acked-by-me = "!git trailer-add-me Acked-by"
     tested-by-me = "!git trailer-add-me Tested-by"
     reported-by = "!git trailer-add Reported-by"
+[gpg]
+    program = gpg2
