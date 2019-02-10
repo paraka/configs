@@ -18,6 +18,9 @@ set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 
+" t_BE enable bracketed paste mode
+set t_BE=
+
 " recreate tags file with F5
 map <F3> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " switch between header/source with F4
