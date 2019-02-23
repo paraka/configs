@@ -31,6 +31,7 @@
     br = branch
     ci = commit
     st = status
+    fixes = "!git show -s --abbrev-commit --abbrev=12 --pretty=format:\"%h (\"%s\")%n\""
     ; Handle trailers general aliases
     trailer-add = "!f(){ GIT_EDITOR=\"git interpret-trailers --in-place --trailer='$1: $2'\" git commit --amend; }; f"
     trailer-add-me = "!f() { git trailer-add \"$1\" \"$(git config user.name) <$(git config user.email)>\"; }; f"
